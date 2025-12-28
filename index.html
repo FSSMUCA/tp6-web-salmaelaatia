@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Calculatrice Web</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Mini Calculatrice Web</h1>
+  </header>
+
+  <main>
+    <form id="calc-form">
+      <label for="a">Nombre A :</label>
+      <input type="number" id="a" name="a" required>
+
+      <label for="b">Nombre B :</label>
+      <input type="number" id="b" name="b" required>
+
+      <label for="operation">Opération :</label>
+      <select id="operation" name="operation">
+        <option value="+">Addition (+)</option>
+        <option value="-">Soustraction (−)</option>
+        <option value="*">Multiplication (×)</option>
+        <option value="/">Division (÷)</option>
+      </select>
+
+      <button type="submit">Calculer</button>
+    </form>
+
+    <div id="erreur" class="message-erreur"></div>
+
+    <section id="historique">
+      <h2>Historique des opérations</h2>
+      <ul id="liste-historique"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - TP Web Avancé</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
